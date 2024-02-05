@@ -265,9 +265,10 @@
 
     .popup-container {
         display: none;
-        position: absolute;
-        top: 0;
-        left: 0;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
 
         background-color: #fff;
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
@@ -476,7 +477,7 @@
 
                     document.getElementById('botaoArrastavel').style.display = "none"
                     time = Date.now()
-                    const botaoArrastavel = menu_container
+                    const botaoArrastavel = btn_popup
 
 
                     const newX = btn_popup.style.left.replace("px", "");
@@ -537,14 +538,14 @@
 
     setup_drag(document.querySelector('.btn-popup'), null, DRAG_TYPES.ICON)
 
-    setup_drag(document.querySelector('#header-menu'), document.querySelector("#menu-box"), DRAG_TYPES.MENU)
+    //setup_drag(document.querySelector('#header-menu'), document.querySelector("#menu-box"), DRAG_TYPES.MENU)
 
 
     function fecharMenu() {
         document.querySelector('.popup-container').style.display = 'none';
         document.getElementById('botaoArrastavel').style.display = "block"
-        document.querySelector('.btn-popup').style.left = document.querySelector('.popup-container').style.left
-        document.querySelector('.btn-popup').style.top = document.querySelector('.popup-container').style.top
+        // document.querySelector('.btn-popup').style.left = document.querySelector('.popup-container').style.left
+        // document.querySelector('.btn-popup').style.top = document.querySelector('.popup-container').style.top
     }
 
     document.getElementById("close-menu").addEventListener("click", () => {
