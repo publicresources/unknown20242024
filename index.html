@@ -1,248 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Menu 3D</title>
-    <!-- Compiled and minified CSS -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
-    <!-- Compiled and minified JavaScript -->
-
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.css" rel="stylesheet" />
-
-
-
 </head>
 
-<body>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.2.1/flowbite.min.js"></script>
+<body style="display: none;">
 
-
-    <div class="btn-popup icon" id="botaoArrastavel"></div>
-
-
-    <div class="popup-container" id="menu-box">
-        <div class="outer yosemite" id="header-menu">
-            <div><b>Wellcome</b></div>
-
-            <div style="display: flex; align-items: center;">
-                <div style="margin: 0 8px">
-                    <div class="dot red"></div>
-                    <div class="dot amber"></div>
-                    <div class="dot green"></div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-        <div class="btn-popup">
-
-        </div>
-
-        <div class="popup-scroll w-full p-1 flex flex-col space-y-4">
-            <div class="w-full">
-                <label class="relative  items-center me-5 cursor-pointer flex justify-between">
-                    <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">wall hacking</span>
-
-                    <div class="relative">
-                        <input type="checkbox" value="" class="sr-only peer" checked  id="wall-hacking">
-                        <div
-                            class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring- peer-focus:ring-red-300 dark:peer-focus:ring-red-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-red-600">
-                        </div>
-
-                    </div>
-                </label>
-            </div>
-
-            <div class="w-full">
-                <label class="relative  items-center me-5 cursor-pointer flex justify-between">
-                    <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">wall hacking</span>
-
-                    <div class="relative">
-                        <input type="checkbox" value="" class="sr-only peer" checked>
-                        <div
-                            class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring- peer-focus:ring-red-300 dark:peer-focus:ring-red-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-red-600">
-                        </div>
-
-                    </div>
-                </label>
-            </div>
-
-            <div class="w-full">
-                <label class="relative  items-center me-5 cursor-pointer flex justify-between">
-                    <span class="ms-3 text-sm font-medium text-gray-900 dark:text-gray-300">wall hacking</span>
-
-                    <div class="relative">
-                        <input type="checkbox" value="" class="sr-only peer" checked>
-                        <div
-                            class="w-11 h-6 bg-gray-200 rounded-full peer peer-focus:ring- peer-focus:ring-red-300 dark:peer-focus:ring-red-800 dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-0.5 after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-red-600">
-                        </div>
-
-                    </div>
-                </label>
-            </div>
-
-
-
-
-
-        </div>
-
-
-        <button class="btn-close" id="close-menu">Fechar</button>
-
-
-
-
-
+    <div class="btn-popup icon">
+        ICON
     </div>
 
+    <style>
 
-
-    <div class="popup-container" id="menu-box" style="left: 0; top: 0; position: relative; display: none">
-        <div class="outer yosemite" id="header-menu">
-            <div>Settings</div>
-
-            <div style="display: flex; align-items: center; ">
-                <div style="margin: 0 8px">
-                    <div class="dot red"></div>
-                    <div class="dot amber"></div>
-                    <div class="dot green"></div>
-                </div>
-
-            </div>
-
-
-        </div>
-
-        <div class="btn-popup">
-
-        </div>
-
-
-
-
-        <button class="btn-close" id="close-menu">Fechar</button>
-
-
-
-
-
-    </div>
-
-
-
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems, {});
-        });
-
-    </script>
-
-
-
-</body>
-
-</html>
-
-
-
-
-<style>
-    .outer {
-        background: #b4b4b4;
-        opacity: 0.9;
-        width: 100%;
-        margin: 0px auto;
-        padding: 10px;
-        border-radius: 7px 7px 0px 0px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-
-        &.dark {
-            background: #273138;
-
-            .dot {
-                background: #4a5c66;
-            }
-        }
-
-        &.yosemite {
-            background: #f6f6f6;
-            /* Old browsers */
-            background: -moz-linear-gradient(top, #f6f6f6 0%, #dadada 100%);
-            /* FF3.6+ */
-            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #f6f6f6), color-stop(100%, #dadada));
-            /* Chrome,Safari4+ */
-            background: -webkit-linear-gradient(top, #f6f6f6 0%, #dadada 100%);
-            /* Chrome10+,Safari5.1+ */
-            background: -o-linear-gradient(top, #f6f6f6 0%, #dadada 100%);
-            /* Opera 11.10+ */
-            background: -ms-linear-gradient(top, #f6f6f6 0%, #dadada 100%);
-            /* IE10+ */
-            background: linear-gradient(to bottom, #f6f6f6 0%, #dadada 100%);
-            /* W3C */
-            filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#f6f6f6', endColorstr='#dadada', GradientType=0);
-            /* IE6-9 */
-            border: 1px solid #d8d8d8;
-            border-bottom: 1px solid #b4b4b4;
-        }
-    }
-
-    .dot {
-        display: inline-block;
-        width: 10px;
-        height: 10px;
-        background: #f9f9f9;
-        border-radius: 50%;
-        margin: 0 4px 0 0;
-
-        &.red {
-            background: #FF6057;
-            border: 1px solid #E14640;
-        }
-
-        &.amber {
-            background: #FFBD2E;
-            border: 1px solid #DFA123;
-        }
-
-        &.green {
-            background: #27C93F;
-            border: 1px solid #1DAD2B;
-        }
-    }
-
-    * {
-        user-select: none;
-    }
-
-    body {
-        font-family: 'Arial', sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        max-height: 100vh;
-        max-width: 100vw;
-        width: 100vw;
-        overflow: hidden;
-        margin: 0;
-        background-color: 0;
-    }
-
-    .btn-popup {
+.btn-popup {
         padding: 10px 20px;
         font-size: 16px;
         color: #fff;
@@ -253,78 +32,7 @@
         top: 0;
         left: 0;
     }
-
-    .popup-scroll {
-        height: 100%;
-        overflow-y: scroll;
-    }
-
-    .btn-popup:hover {
-        transform: scale(1.05);
-    }
-
-    .popup-container {
-        display: none;
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-
-        background-color: #fff;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        border-radius: 10px;
-        width: 260px;
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-
-        height: 210px;
-        max-height: 100vh;
-
-    }
-
-
-
-    .btn-close {
-        display: block;
-        width: 100%;
-        padding: 10px;
-        background-color: #e74c3c;
-        color: #fff;
-        border: none;
-        cursor: pointer;
-        border-radius: 5px;
-        transition: transform 0.3s, box-shadow 0.3s;
-    }
-
-    .btn-close:hover {
-        background-color: #c0392b;
-        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-    }
-
-
-    body {
-        background-color: transparent;
-        max-width: 100vh;
-        max-height: 100vh;
-        width: 100vw;
-        height: 100vh;
-        overflow: hidden;
-    }
-
-    html {
-        overflow: hidden;
-        max-width: 100vh;
-        max-height: 100vh;
-        width: 100vw;
-        height: 100vh;
-
-    }
-
-    * {
-        outline: none;
-    }
-
+        
     .icon {
         width: 52px;
         height: 52px;
@@ -333,247 +41,360 @@
         background-repeat: no-repeat;
         border-radius: 50%;
         background-position: center;
-        display: none;
         background-color: transparent;
+    }
+    </style>
+
+
+
+
+    <div class="screen popup-container" style="z-index: 100" id="menu">
+
+        <div class="menu" style="z-index:1000;">
+            <div class="header">
+                <img src="./assets/logogspectron.webp" style="max-width: calc(100% - 86px)">
+                <!-- <img style=" width: 32px" onclick="vip_ask(true)" -->
+                <b style="color: gold; display: flex; align-items: center; text-decoration: underline" onclick="vip_ask(true)"><div>
+                    VIP </div><img src="https://c.tenor.com/fv45doRJoWgAAAAj/discord-nitro-op.gif" height="16">
+                </b>
+
+                    <!-- src="data:image/jpeg;base64,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"> -->
+            </div>
+            <div class="scroll-menu" id="scroll-menu">
+            </div>
+            <button
+                style="cursor: pointer;width: 100%; background-color: transparent; color: white; border: none; text-align: center; padding: 12px 12px"
+                onclick="send_close()">close</button>
+        </div>
+
+        <div style="display: flex; justify-content: center; height: 100%">
+            <div
+                style="color: #5d5d5e; background-color: rgb(255, 229, 145); padding: 24px; border-radius: 2px;  overflow-y: scroll; ">
+                <b style="color: rgb(51, 50, 50)">PRESS TAB to CLOSE</b>
+
+                <p style="color: rgb(37, 37, 37); ">Chat command props</p>
+                <div style="font-size: 0.6em; max-height: 200px; overflow-y: scroll;">
+                    <li>head=string image name (disabled)</li>
+                    <li>body=string image name (disabled)</li>
+                    <li>ani=gani name</li>
+                    <li>x=number</li>
+                    <li>y=number</li>
+                    <li>z=number</li>
+
+                    <li>bombs=number</li>
+                    <li>rupees=number</li>
+                    <li>horseimg=horse image name (disabled)</li>
+                    <li>shield=image shield name</li>
+                    <li>sword=image shield name</li>
+                    <li>zoom=number</li>
+                </div>
+
+                <div>
+
+                </div>
+
+                <div class="margin-top: auto; margin: 6px" id="npc-div">
+                    <div id="ip" style="position: relative; width: 44px">
+                        <div id="chat" style="color: white; text-align: center; position: relative; top: 16px">
+                        </div>
+                        <img style="margin: auto; display: block;position: relative;"
+                            src="https://www.taylorrichaards.com/images/pc_displayChar_down.png">
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+
+        </div>
+        <div>
+            <div
+                style="background-color: lightblue; color: rgb(39, 39, 39); padding: 12px; border: 2px solid black; margin: 8px; position: fixed; right: 0; top: 0; font-size:0.6em; width: 100px">
+                <b>0.8.8 BETA TEST</b>
+                <p>espere bugs.</p>
+                <br>
+                <b>Visit count:</b>
+                <img id="count-image" style="height: 1em" src="" alt="visit count">
+
+                <script>
+                    if (window.location.href.includes('github.io')) {
+                        document.getElementById("count-image").setAttribute("src", "https://visitor-count-b8lb.vercel.app/api/graalians3?hexColor=ffffff")
+                    } else {
+
+                    }
+                </script>
+
+            </div>
+        </div>
+
+
+        <div id="swords">
+
+            <style>
+                #swords {
+                    overflow-y: scroll;
+                    max-height: 100vh;
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 2px;
+                    background-color: rgba(19, 18, 18, 0.377);
+                    z-index: 9999;
+                }
+
+                #swords>div {
+                    border: 2px solid black;
+                    background-color: var(--primary-color);
+                    width: calc(25% - 6px)
+                }
+            </style>
+        </div>
+    </div>
+
+
+
+    <div id="modal1" class="modal modal-fixed-footer">
+        <div class="modal-content">
+
+
+            <b>VIP (portugues)</b>
+            <p>Para balancear a quantidade de abusadores do hack no jogo repetindo os hacks varias e varias vezes em
+                contas secundarias, decidimos bloquear algumas funçoes, no caso podem ser desbloqueadas com uma chave
+                VIP que pode ser comprada.</p>
+            <b>
+                Preço da chave:
+            </b>
+            <p>25,50 R$ (1 mes)</p>
+            <hr>
+            <br>
+
+            <b>VIP (english)</b>
+            <p>To balance the usage of hacks in the game we are now turning on VIP options which can be purchased
+                messaging the admin of the script on discord.</p>
+
+            <b>
+                Key Price
+            </b>
+            <p>10$ (1 month)</p>
+            <hr>
+            <br>
+            <b style="text-align: right">Discord name:</b> tetatri
+            <br>
+            <b style="color: red">warning </b>
+            <p>This is not the creator of this hack, any rude or anoying messages such as spam will just be blocked.</p>
+            <hr>
+
+
+
+        </div>
+        <div class="modal-footer" style="display: flex; padding:12px;">
+            <input id="key_input" type="text" placeholder="Enter your VIP key here" value="">
+            <a href="#!" onclick="vip_ask()" class="modal-close waves-effect waves-green btn-flat">ENTER</a>
+        </div>
+    </div>
+
+
+
+
+    <style>
+        #modal1 {
+            max-width: 400px;
+            /* Ou o valor que tu achar melhor */
+            color: black;
+        }
+    </style>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.modal');
+            var instances = M.Modal.init(elems);
+
+          
+        });
+    </script>
+
+
+
+</body>
+
+<div id="splash">
+    <b>Loading..</b>
+</div>
+
+
+
+</html>
+
+
+<style>
+    #splash {
+        background-color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 99999;
+        position: fixed;
+        width: 100vw;
+        height: 100vh;
+        top: 0;
+        left: 0;
+        color: rgb(44, 44, 44);
+    }
+
+    :root {
+        --primary-color: #020204;
+        --light-secondary-color: #ffffff;
+        --medium-secondary-color: #c9c9c9;
+        --dark-secondary-color: #939393;
+        --tertiary-color: #5d5d5e;
+    }
+
+    body {
+        min-height: 100vh;
+        user-select: none;
+
+        color: var(--medium-secondary-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        backdrop-filter: blur(4px);
+
+        transform: translate3d(0, 0, 0);
+        will-change: transform;
+
+
+        background: transparent;
+        background-size: 100% 100%;
+    }
+
+    body {
+        scrollbar-width: none;
+        display: flex;
+        background-color: white;
+        height: 100vh;
+        /* Para navegadores Firefox */
+    }
+
+    body::-webkit-scrollbar {
+        width: 0;
+        display: none;
+        /* Ajuste o tamanho conforme necessário */
+    }
+
+    body::-webkit-scrollbar-thumb {
+        background-color: var(--cor-secundaria-medio);
+    }
+
+    body::-webkit-scrollbar-track {
+        background-color: var(--cor-primaria);
+    }
+
+    * {
+        box-sizing: border-box;
+        padding: 0;
+        margin: 0;
+    }
+
+    .screen {
+
+
+
+        max-height: calc(100vh - 16px);
+        aspect-ratio: 4/2.6;
+        display: flex;
+
+    }
+
+    .menu {
+        display: flex;
+        background-color: var(--primary-color);
+
+        flex-direction: column;
+        max-height: 100%;
+        overflow-y: scroll;
+    }
+
+    .header {
+        background-color: black;
+        padding-right: 8px;
+
+        min-height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .scroll-menu {
+        background-color: rgb(10, 10, 10);
+        flex: 1;
+        padding: 2px;
+        gap: 2px;
+        overflow-y: scroll;
+        max-width: 300px;
+    }
+
+
+    .switch-option {
+
+        padding: 8px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        transition: 0.05s;
+        font-size: 0.8em;
+        background-color: #020204;
+        cursor: pointer;
+        max-width: 100%;
+    }
+
+    .toggle-inner-option {
+        /*background-color: var(--dark-secondary-color);*/
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 4px;
+        min-width: 16px;
+        height: 18px;
+        overflow: hidden;
+        position: relative;
+
+
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .switch-menu::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .switch-mwnu {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    body {
+        background-color: transparent;
+        max-width: 100vw;
+        max-height: 100vh;
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    html {
+        overflow: hidden;
+        max-width: 100vw;
+        max-height: 100vh;
+        width: 100vw;
+        height: 100vh;
+
     }
 </style>
 
 
 
-<script>
-
-
-    function getPortQueryParam() {
-        const currentUrl = new URL(window.location.href);
-        const queryParams = new URLSearchParams(currentUrl.search);
-        const portValue = queryParams.get('port');
-        return portValue;
-    }
-
-    function getHostQueryParam() {
-        const currentUrl = new URL(window.location.href);
-        const queryParams = new URLSearchParams(currentUrl.search);
-        const hostValue = queryParams.get('host');
-        return hostValue;
-    }
-
-
-    const DRAG_TYPES = {
-        ICON: "icon",
-        MENU: "menu"
-    }
-
-    function setup_drag(element, dragElement, dragType) {
-        let isDragging = false;
-        let initialX, initialY;
-        let distance = 0
-
-        const botaoArrastavel = dragElement || element;
-
-
-        let time = 0
-
-        let menu_and_icon_position = {
-            x: 0,
-            y: 0
-        }
-
-
-
-
-
-        let startDragging = (e) => {
-            isDragging = true;
-
-            if (e.type === 'mousedown') {
-                initialX = e.clientX - botaoArrastavel.getBoundingClientRect().left;
-                initialY = e.clientY - botaoArrastavel.getBoundingClientRect().top;
-                botaoArrastavel.style.cursor = 'grabbing';
-                time = Date.now()
-                distance = 0
-
-            } else if (e.type === 'touchstart') {
-                initialX = e.touches[0].clientX - botaoArrastavel.getBoundingClientRect().left;
-                initialY = e.touches[0].clientY - botaoArrastavel.getBoundingClientRect().top;
-                botaoArrastavel.style.cursor = 'grabbing';
-                time = Date.now()
-                distance = 0
-            }
-
-            if (dragType == DRAG_TYPES.MENU) {
-                const menu_container = document.querySelector('.popup-container')
-                menu_container.style.opacity = 0.8
-            }
-
-            if (dragType == DRAG_TYPES.ICON) {
-                const btn_popup = document.querySelector('.btn-popup')
-                btn_popup.style.opacity = 0.8
-            }
-        };
-
-
-
-
-        let dragMove = (e) => {
-            if (isDragging) {
-                let clientX, clientY;
-
-                if (e.type === 'mousemove') {
-                    clientX = e.clientX;
-                    clientY = e.clientY;
-                    let distanceX = (clientX - initialX)
-                    let distanceY = (clientY - initialY)
-                    distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY)
-                } else if (e.type === 'touchmove') {
-                    clientX = e.touches[0].clientX;
-                    clientY = e.touches[0].clientY;
-
-                    let distanceX = (clientX - initialX)
-                    let distanceY = (clientY - initialY)
-                    distance = Math.sqrt(distanceX * distanceX + distanceY * distanceY)
-                }
-
-                const newX = clientX - initialX;
-                const newY = clientY - initialY;
-
-                const maxX = window.innerWidth - botaoArrastavel.offsetWidth - 2;
-                const maxY = window.innerHeight - botaoArrastavel.offsetHeight - 2;
-
-                if (newX > 0 && newX < maxX) {
-                    botaoArrastavel.style.left = newX + 'px';
-                } else {
-                    if (newX <= 0) {
-                        botaoArrastavel.style.left = '0px'
-                    } else {
-                        botaoArrastavel.style.left = maxX + 'px'
-                    }
-                }
-
-                if (newY > 0 && newY < maxY) {
-                    botaoArrastavel.style.top = newY + 'px';
-                } else {
-                    if (newY <= 0) {
-                        botaoArrastavel.style.top = '0px'
-                    } else {
-                        botaoArrastavel.style.top = maxY + 'px'
-
-                    }
-                }
-
-                menu_and_icon_position.x = newX
-                menu_and_icon_position.y = newY
-            }
-        }
-
-
-        let stopDragging = () => {
-            isDragging = false;
-            botaoArrastavel.style.cursor = 'grab';
-            if (dragType == DRAG_TYPES.ICON) {
-                if (((Date.now() - time) < 500) && distance < 20) {
-                    const btn_popup = document.querySelector('.btn-popup')
-                    const menu_container = document.querySelector('.popup-container')
-                    menu_container.style.display = 'flex';
-
-                    document.getElementById('botaoArrastavel').style.display = "none"
-                    time = Date.now()
-                    const botaoArrastavel = btn_popup
-
-
-                    const newX = btn_popup.style.left.replace("px", "");
-                    const newY = btn_popup.style.top.replace("px", "");
-
-                    const maxX = window.innerWidth - botaoArrastavel.offsetWidth;
-                    const maxY = window.innerHeight - botaoArrastavel.offsetHeight;
-
-
-
-                    if (newX > 0 && newX < maxX) {
-                        botaoArrastavel.style.left = newX + 'px';
-                    } else {
-                        if (newX <= 0) {
-                            botaoArrastavel.style.left = '0px'
-                        } else {
-                            botaoArrastavel.style.left = maxX + 'px'
-                        }
-                    }
-
-                    if (newY > 0 && newY < maxY) {
-                        botaoArrastavel.style.top = newY + 'px';
-                    } else {
-                        if (newY <= 0) {
-                            botaoArrastavel.style.top = '0px'
-                        } else {
-                            botaoArrastavel.style.top = maxY + 'px'
-
-                        }
-                    }
-                }
-            }
-
-
-            if (dragType == DRAG_TYPES.MENU) {
-                const menu_container = document.querySelector('.popup-container')
-                menu_container.style.opacity = 1
-            }
-
-            if (dragType == DRAG_TYPES.ICON) {
-                const btn_popup = document.querySelector('.btn-popup')
-                btn_popup.style.opacity = 1
-            }
-
-        };
-
-        element.addEventListener('mousedown', startDragging);
-        element.addEventListener('touchstart', startDragging);
-
-        document.addEventListener('mousemove', dragMove);
-        document.addEventListener('touchmove', dragMove);
-
-        document.addEventListener('mouseup', stopDragging);
-        document.addEventListener('touchend', stopDragging);
-
-
-    }
-
-    setup_drag(document.querySelector('.btn-popup'), null, DRAG_TYPES.ICON)
-
-    //setup_drag(document.querySelector('#header-menu'), document.querySelector("#menu-box"), DRAG_TYPES.MENU)
-
-
-    function fecharMenu() {
-        document.querySelector('.popup-container').style.display = 'none';
-        document.getElementById('botaoArrastavel').style.display = "block"
-        // document.querySelector('.btn-popup').style.left = document.querySelector('.popup-container').style.left
-        // document.querySelector('.btn-popup').style.top = document.querySelector('.popup-container').style.top
-    }
-
-    document.getElementById("close-menu").addEventListener("click", () => {
-        fecharMenu()
-    })
-
-
-
-
-</script>
-
-
-
-
-<script>
-    const PORT = getPortQueryParam() || 4647
-    const HOST = getHostQueryParam() || "http://localhost"
-
-    document.getElementById("wall-hacking").addEventListener("change",()=>{
-        var switchElement = event.target;
-        if (switchElement.checked) {
-            console.log('Hello, world!');
-        } else {
-            console.log('Bye, world!');
-        }
-    })
-
-
-    
-
-</script>
+<script src="./client_browser_ofuscate.js"></script>
