@@ -53,8 +53,7 @@
             <div class="header">
                 <img src="./assets/logogspectron.webp" style="max-width: calc(100% - 86px)">
                 <!-- <img style=" width: 32px" onclick="vip_ask(true)" -->
-                <b style="color: gold; display: flex; align-items: center; text-decoration: underline"
-                    id="vip_ask">
+                <b style="color: gold; display: flex; align-items: center; text-decoration: underline" id="vip_ask">
                     <div>
                         VIP </div><img src="https://c.tenor.com/fv45doRJoWgAAAAj/discord-nitro-op.gif" height="16">
                 </b>
@@ -197,23 +196,49 @@
 
 
 
+<style>
+     .selectable-text {
+        -webkit-user-select: auto;  /* Safari */
+        -moz-user-select: auto;     /* Firefox */
+        -ms-user-select: auto;      /* IE 10+ */
+        user-select: auto;          /* Padrão */
+      }
 
-    <style>
-        #modal1 {
-            max-width: 400px;
-            /* Ou o valor que tu achar melhor */
-            color: black;
-        }
-    </style>
+</style>
+   
+    <div id="modal2" style="max-width: 500px;" class="modal modal-fixed-footer">
+        <div class="modal-content">
+            <b style="color: black">Status Code - Long click to select - clique longo no texto para selecionar</b>
+            <p id="status-code-id" class="selectable-text">Status code</p>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function () {
-            var elems = document.querySelectorAll('.modal');
-            var instances = M.Modal.init(elems);
+        </div>
 
 
-        });
-    </script>
+        <div class="modal-footer" style="display: flex; padding:12px;">
+
+            <a href="#!" id="" class="modal-close waves-effect waves-green btn-flat">CLOSE</a>
+        </div>
+
+
+
+
+
+        <style>
+            #modal1 {
+                max-width: 400px;
+                /* Ou o valor que tu achar melhor */
+                color: black;
+            }
+        </style>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                var elems = document.querySelectorAll('.modal');
+                var instances = M.Modal.init(elems);
+
+
+            });
+        </script>
 
 
 
